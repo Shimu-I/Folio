@@ -1,18 +1,18 @@
-![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=shimu-i/Folio)
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=shimu-i/DataNest)
 
 
- 📗 Folio
+ 📗 DataNest
 
 > A lightweight, fully offline research notebook for CSE researchers.  
 > Built for deep work — not the cloud.
 
 ---
 
-## What is Folio?
+## What is DataNest?
 
-**Folio** is a local-first research notebook designed specifically for Computer Science & Engineering researchers. It replaces cloud-dependent tools like Notion and Zotero with a single, privacy-first, offline-capable desktop app that stores everything on your own machine. No subscriptions. No limits. No internet required.
+**DataNest** is a local-first research notebook designed specifically for Computer Science & Engineering researchers. It replaces cloud-dependent tools like Notion and Zotero with a single, privacy-first, offline-capable desktop app that stores everything on your own machine. No subscriptions. No limits. No internet required.
 
-Named after the large-format pages scholars once used to record knowledge — Folio gives you that same sense of ownership over your research.
+Named after the large-format pages scholars once used to record knowledge — DataNest gives you that same sense of ownership over your research.
 
 ---
 
@@ -84,7 +84,7 @@ box-shadow: 0 4px 32px rgba(0, 0, 0, 0.35);
 
 ```
 ┌──────────────────────────────────────────────────────────────────┐
-│  📗 Folio                                          🌙  ⚙️  👤   │
+│  📗 DataNest                                          🌙  ⚙️  👤   │
 ├───────────────┬──────────────────────────────────────────────────┤
 │               │                                                  │
 │  LEFT PANEL   │             MAIN CONTENT AREA                   │
@@ -125,7 +125,7 @@ The home screen. At a glance:
 
 ### 2. PDF Annotation (Zotero-class)
 
-Full annotation support for any PDF imported into Folio — all annotations stored in Folio's database, never modifying the original PDF file.
+Full annotation support for any PDF imported into DataNest — all annotations stored in DataNest's database, never modifying the original PDF file.
 
 #### Annotation Tools
 | Tool | Description |
@@ -136,7 +136,7 @@ Full annotation support for any PDF imported into Folio — all annotations stor
 | ~~S~~ Strikethrough | Strike through selected text |
 | 🖊️ Freehand draw | Draw directly on the page (pen tool) |
 | 🔲 Area select | Draw a rectangle to capture a figure or diagram as an image crop |
-| 🔗 Link to note | Link a highlighted passage to any note in Folio |
+| 🔗 Link to note | Link a highlighted passage to any note in DataNest |
 
 #### Annotation Panel
 A collapsible side panel shows all annotations for the open PDF:
@@ -154,7 +154,7 @@ Exported: 2025-08-12
 [Highlight - Yellow]
 "The dominant sequence transduction models are based on complex recurrent
 or convolutional neural networks"
-Note: "This is the gap Folio's graph approach addresses"
+Note: "This is the gap DataNest's graph approach addresses"
 
 ── Page 5 ──
 [Sticky Note]
@@ -168,12 +168,12 @@ Note: "This is the gap Folio's graph approach addresses"
 
 ### 3. Web Bookmarking (Zotero-class)
 
-Capture research from the web without leaving Folio.
+Capture research from the web without leaving DataNest.
 
 #### Bookmark Methods
-- **Paste URL** — paste any URL into the Bookmarks section; Folio fetches title, authors, and description (requires a one-time internet connection)
+- **Paste URL** — paste any URL into the Bookmarks section; DataNest fetches title, authors, and description (requires a one-time internet connection)
 - **Local HTML snapshot** — saves a full offline copy of the page so you can read it without internet
-- **Browser extension** (optional, built separately) — one-click save from Chrome/Firefox; sends page data to Folio via localhost
+- **Browser extension** (optional, built separately) — one-click save from Chrome/Firefox; sends page data to DataNest via localhost
 - **Manual entry** — add a bookmark with custom title, URL, notes, and tags
 
 #### Bookmark Fields
@@ -225,7 +225,7 @@ Track every research paper you encounter:
 | Annotation count | How many highlights/notes you've made |
 
 #### Metadata Auto-Fetch
-Paste a DOI (e.g. `10.1145/3292500.3330919`) or arXiv ID (e.g. `1706.03762`) and Folio queries the CrossRef or arXiv API once to auto-fill title, authors, abstract, venue, and year. After that initial fetch, Folio works fully offline.
+Paste a DOI (e.g. `10.1145/3292500.3330919`) or arXiv ID (e.g. `1706.03762`) and DataNest queries the CrossRef or arXiv API once to auto-fill title, authors, abstract, venue, and year. After that initial fetch, DataNest works fully offline.
 
 #### BibTeX Support
 - **Import** `.bib` files to bulk-add papers
@@ -267,7 +267,7 @@ Full-featured markdown editor with live preview.
 > quote              →  blockquote
 - item               →  bullet list
 1. item              →  numbered list
-[[note name]]        →  internal link to another Folio note
+[[note name]]        →  internal link to another DataNest note
 @cite[key]           →  citation from your library
 $x = \frac{a}{b}$   →  inline LaTeX (KaTeX)
 $$\sum_{i=1}^n$$    →  block LaTeX
@@ -349,32 +349,32 @@ Gantt-style personal project tracker:
 ### Manual Backup
 Export your entire vault at any time:
 - Go to **Settings → Backup → Export Vault**
-- Saves as a `.folio` file (structured zip: JSON + media + annotations + settings)
+- Saves as a `.DataNest` file (structured zip: JSON + media + annotations + settings)
 - Store anywhere: USB, external drive, or cloud storage of your choice
 
 ### Account Deletion Flow
 ```
-1. Folio prompts: "Would you like a backup before deleting?"
+1. DataNest prompts: "Would you like a backup before deleting?"
 2. User confirms email address and gives explicit consent
-3. Folio generates a .folio export file locally
+3. DataNest generates a .DataNest export file locally
 4. File is sent via the system's default mail client (mailto: / MAPI)
-   — no external mail server, no data leaves your machine via Folio itself
+   — no external mail server, no data leaves your machine via DataNest itself
 5. Account and local data are securely deleted
 ```
 
 ### Restore / New Install
 ```
-1. Install Folio on new machine
+1. Install DataNest on new machine
 2. Create a local profile (name + optional PIN)
 3. Go to Settings → Restore from Backup
-4. Select your .folio file
+4. Select your .DataNest file
 5. All notes, papers, tags, collections, bookmarks, annotations,
    templates, settings, and media are restored exactly as left
 ```
 
 ### Backup File Format
 ```
-vault_backup_2025-08-12.folio   (renamed .zip internally)
+vault_backup_2025-08-12.DataNest   (renamed .zip internally)
 ├── db.json                      ← notes, papers, tags, citations, bookmarks
 ├── annotations.json             ← all PDF annotations with page positions
 ├── settings.json                ← theme, preferences, templates
@@ -391,18 +391,18 @@ vault_backup_2025-08-12.folio   (renamed .zip internally)
 
 ## 🔒 Privacy
 
-- **Zero telemetry** — Folio never phones home
+- **Zero telemetry** — DataNest never phones home
 - **No accounts required** — the "account" is a local profile with an optional PIN lock
 - **No cloud sync** — everything stays on your machine
 - **One-time API calls only** — metadata fetch for DOI/arXiv happens once per paper, then cached locally forever
-- **Open format** — `.folio` files are standard zips; readable with any zip tool
+- **Open format** — `.DataNest` files are standard zips; readable with any zip tool
 
 ---
 
 ## 🗃️ Project Structure
 
 ```
-folio/
+DataNest/
 ├── src-tauri/                    ← Tauri (Rust) backend
 │   ├── src/
 │   │   ├── main.rs
@@ -454,8 +454,8 @@ folio/
 
 ### Install & Run
 ```bash
-git clone https://github.com/yourname/folio
-cd folio
+git clone https://github.com/yourname/DataNest
+cd DataNest
 npm install
 npm run tauri dev
 ```
@@ -500,7 +500,7 @@ Produces a self-contained installer for Windows (.msi), macOS (.dmg), or Linux (
 - [x] Image drag & drop + inline drawing canvas (Excalidraw)
 - [x] Code snippet library
 - [x] Tag system + full-text search
-- [x] Backup / restore (.folio format)
+- [x] Backup / restore (.DataNest format)
 - [x] Account deletion with email backup consent flow
 
 ### v1.1 — Zotero-class
@@ -518,7 +518,7 @@ Produces a self-contained installer for Windows (.msi), macOS (.dmg), or Linux (
 - [ ] PDF annotation ↔ note linking
 
 ### v2.0 — Extended
-- [ ] Browser extension (Chrome/Firefox → Folio bookmarking)
+- [ ] Browser extension (Chrome/Firefox → DataNest bookmarking)
 - [ ] Mobile companion app (read-only, local Wi-Fi sync)
 - [ ] Multi-vault support (separate vaults per project)
 - [ ] Collaborative export for supervisor sharing
@@ -531,4 +531,4 @@ MIT License — free to use, modify, and distribute.
 
 ---
 
-*Folio — your research, your machine, your rules.*
+*DataNest — your research, your machine, your rules.*
